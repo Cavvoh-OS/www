@@ -1,5 +1,5 @@
 {
-  "name": "evox",
+  "name": "cavos",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
@@ -7,7 +7,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "clsx": "^2.1.1",
-    "evox": "file:",
+    "cavos": "file:",
     "framer-motion": "^11.5.4",
     "prettier": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.6.6",

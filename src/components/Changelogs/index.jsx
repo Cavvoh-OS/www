@@ -4,7 +4,7 @@ const Changelogs = (props) => {
   const [changelogs, setChangelogs] = useState()
 
   const fetchChangelogs = async () => {
-    const url = `https://raw.githubusercontent.com/Evolution-X/OTA/refs/heads/udc/changelogs/${props.codename}.txt`
+    const url = `https://raw.githubusercontent.com/Cavvoh-OS/OTA/refs/heads/udc/changelogs/${props.codename}.txt`
     try {
       const logs = await fetch(url)
       const data = await logs.text()

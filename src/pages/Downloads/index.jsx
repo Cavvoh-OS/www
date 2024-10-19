@@ -1,9 +1,9 @@
 import React, { useEffect } from "react"
 import { useState } from "react"
 import { Link } from "react-router-dom"
-import evoloading from "../../assets/evoloading.gif"
+import cavloading from "../../assets/cavloading.gif"
 import iphone from "../../assets/iphone.gif"
-import evolution from "../../assets/evolution.svg"
+import cavvoh from "../../assets/cavvoh.svg"
 
 const Downloads = () => {
   const [devices, setDevices] = useState([])
@@ -28,7 +28,7 @@ const Downloads = () => {
   // Fetch the list of devices
   const fetchDevices = async () => {
     const url =
-      "https://raw.githubusercontent.com/Evolution-X/www_gitres/udc/devices/devices.json"
+      "https://raw.githubusercontent.com/Cavvoh-OS/www_gitres/udc/devices/devices.json"
 
     try {
       const response = await fetch(url)
@@ -46,7 +46,7 @@ const Downloads = () => {
     // Wait for all device data to be fetched
     const data = await Promise.all(
       devices.map(async (device) => {
-        const durl = `https://raw.githubusercontent.com/Evolution-X/OTA/udc/builds/${device}.json`
+        const durl = `https://raw.githubusercontent.com/Cavvoh-OS/OTA/udc/builds/${device}.json`
         try {
           const fetchedDevice = await fetch(durl)
           const fetchedDeviceData = await fetchedDevice.json()
@@ -93,7 +93,7 @@ const Downloads = () => {
   return (
     <>
       {loading && (
-        <img className="mx-auto" src={evoloading} alt="loading ..." />
+        <img className="mx-auto" src={cavloading} alt="loading ..." />
       )}
 
       {!loading && (
@@ -101,7 +101,7 @@ const Downloads = () => {
           <div className="mx-4 inline-flex min-w-[20rem] flex-col items-center justify-center gap-8 sm:mx-6 sm:min-w-[32rem] lg:w-[60rem] lg:gap-12 xl:w-[64rem]">
             <div className="inline-flex flex-col items-baseline gap-2 text-center font-[Prod-bold] text-4xl sm:flex-row sm:text-5xl lg:gap-4 lg:text-6xl">
               <span className="text-[#afbdf3]">Download</span>
-              <img className="h-7 sm:h-10 lg:h-12" src={evolution} alt="" />
+              <img className="h-7 sm:h-10 lg:h-12" src={cavvoh} alt="" />
             </div>
             <div className="space-y-4">
               <input
@@ -195,7 +195,7 @@ const Downloads = () => {
                     <div className="flex min-h-full w-[23rem] flex-col justify-between rounded-2xl border border-slate-800 bg-black pb-7 duration-100 ease-in lg:hover:scale-105">
                       <img
                         className="mx-auto my-4 flex size-56 object-contain"
-                        src={`https://github.com/Evolution-X/www_gitres/blob/udc/devices/images/${device.codename}.png?raw=true`}
+                        src={`https://github.com/Cavvoh-OS/www_gitres/blob/udc/devices/images/${device.codename}.png?raw=true`}
                         alt=""
                       />
                       <div className="flex flex-col gap-6 px-7">
@@ -224,7 +224,7 @@ const Downloads = () => {
                           to={`/downloads/${device.codename}`}
                           className="inline-flex h-16 items-center justify-center rounded-full bg-[#5b60e3] text-xl text-white"
                         >
-                          Get Evolution X
+                          Get Cavvoh OS
                         </Link>
                       </div>
                     </div>

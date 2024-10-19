@@ -14,7 +14,7 @@ body{
     @apply rounded-full bg-white px-7 font-normal text-black lg:text-lg;
 }
 
-.evoxhighlight{
+.cavoshighlight{
     @apply text-[#AFBEF3]
 }
 

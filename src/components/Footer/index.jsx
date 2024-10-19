@@ -1,7 +1,7 @@
 import ghicon from "../../assets/ghicon.svg"
 import donateicon from "../../assets/donateicon.svg"
 import discordicon from "../../assets/discordicon.svg"
-import evolution from "../../assets/evolution.svg"
+import cavvoh from "../../assets/cavvoh.svg"
 import xlogo from "../../assets/xlogo.svg"
 
 function index() {
@@ -9,7 +9,7 @@ function index() {
     <div className="m-6 flex flex-col gap-1 border-t border-white/50 px-4 pt-6 tracking-wide text-white">
       <div className="flex flex-col items-center sm:flex-row sm:justify-between lg:flex-row">
         <div className="inline-flex flex-col">
-          <img className="h-10" src={evolution} alt="" />
+          <img className="h-10" src={cavvoh} alt="" />
           <p className="mt-2 text-center text-lg text-blue-200 sm:text-start">
             #KeepEvolving
           </p>
@@ -17,7 +17,7 @@ function index() {
         <div className="flex justify-center space-x-2 lg:justify-end">
           <div className="my-5 flex h-12 justify-evenly gap-4">
             <a
-              href={"https://discord.com/invite/evolution-x"}
+              href={"https://discord.com/invite/cavvoh-os"}
               target="_blank"
               rel="noreferrer"
             >
@@ -25,21 +25,21 @@ function index() {
             </a>
 
             <a
-              href="https://github.com/Evolution-X"
+              href="https://github.com/Cavvoh-OS"
               target="_blank"
               rel="noreferrer"
             >
               <img src={ghicon} alt="" />
             </a>
             <a
-              href={"https://x.com/EvolutionXROM"}
+              href={"https://x.com/CavvohOSROM"}
               target="_blank"
               rel="noreferrer"
             >
               <img className="rounded-full bg-white p-2" src={xlogo} alt="" />
             </a>
             <a
-              href="https://www.gofundme.com/f/evolutionx-developers"
+              href="https://www.gofundme.com/f/cavvohos-developers"
               target="_blank"
               rel="noreferrer"
             >

@@ -1,6 +1,6 @@
-# Evolution X Website
+# Cavvoh OS Website
 
-![Evolution X](https://github.com/Evolution-X/manifest/raw/udc/Banner.png)
+![Cavvoh OS](https://github.com/Cavvoh-OS/manifest/raw/udc/Banner.png)
 
 ## Install
 

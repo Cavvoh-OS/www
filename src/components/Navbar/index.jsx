@@ -1,6 +1,6 @@
 import React, { useRef } from "react"
 import { Link, NavLink } from "react-router-dom"
-import evoXLogo from "../../assets/evoXLogo.svg"
+import cavosLogo from "../../assets/cavosLogo.svg"
 import menu from "../../assets/menu.svg"
 import menuClose from "../../assets/menuClose.svg"
 
@@ -20,8 +20,8 @@ export default function Navbar() {
       <NavLink to={"/"}>
         <img
           className="size-11 md:size-12 lg:size-14"
-          src={evoXLogo}
-          alt="evoXLogo"
+          src={cavosLogo}
+          alt="cavosLogo"
         />
       </NavLink>
       <div>

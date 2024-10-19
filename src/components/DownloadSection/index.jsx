@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom"
 import { Link } from "react-router-dom"
 import donateicon from "../../assets/donateicon.svg"
 import xdaicon from "../../assets/xdaicon.svg"
-import evoloading from "../../assets/evoloading.gif"
+import cavloading from "../../assets/cavloading.gif"
 import Changelogs from "../Changelogs"
 import FlashingInstructions from "../FlashingInstructions"
 
@@ -33,7 +33,7 @@ const DownloadSection = () => {
     }
   }
   const fetchDevice = async () => {
-    const url = `https://raw.githubusercontent.com/Evolution-X/OTA/udc/builds/${codename}.json`
+    const url = `https://raw.githubusercontent.com/Cavvoh-OS/OTA/udc/builds/${codename}.json`
     try {
       const response = await fetch(url)
       const fetchedDeviceData = await response.json()
@@ -45,7 +45,7 @@ const DownloadSection = () => {
     }
   }
   const fetchVanillaDevice = async () => {
-    const url = `https://raw.githubusercontent.com/Evolution-X/OTA/udc-vanilla/builds/${codename}.json`
+    const url = `https://raw.githubusercontent.com/Cavvoh-OS/OTA/udc-vanilla/builds/${codename}.json`
     try {
       const response = await fetch(url)
       const fetchedDeviceData = await response.json()
@@ -71,7 +71,7 @@ const DownloadSection = () => {
       {loading && (
         <img
           className="mx-auto my-auto w-4/5 lg:w-2/5"
-          src={evoloading}
+          src={cavloading}
           alt="loading ..."
         />
       )}
@@ -91,7 +91,7 @@ const DownloadSection = () => {
                     included in this ROM before flashing it! YOU are choosing to
                     make these modificiations, and if you point your finger at
                     us for messing up your device, we will{" "}
-                    <span className="evoxhighlight font-[Prod-bold]">
+                    <span className="cavoshighlight font-[Prod-bold]">
                       laugh
                     </span>{" "}
                     at you.
@@ -102,7 +102,7 @@ const DownloadSection = () => {
                 <div className="mt-6 flex flex-col gap-4">
                   <img
                     className="max-h-72 min-h-64 object-contain"
-                    src={`https://github.com/Evolution-X/www_gitres/blob/udc/devices/images/${codename}.png?raw=true`}
+                    src={`https://github.com/Cavvoh-OS/www_gitres/blob/udc/devices/images/${codename}.png?raw=true`}
                     alt="Device"
                   />
                   <div className="flex flex-wrap justify-center gap-4 sm:flex-row md:flex-col lg:justify-normal lg:pl-2">

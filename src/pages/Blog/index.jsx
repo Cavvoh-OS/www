@@ -1,9 +1,9 @@
 import postbg from "../../assets/postbg.png"
 import avatar from "../../assets/avatar.png"
 import { Link } from "react-router-dom"
-import evolution from "../../assets/evolution.svg"
+import cavvoh from "../../assets/cavvoh.svg"
 import { useState, useEffect } from "react"
-import evoloading from "../../assets/evoloading.gif"
+import cavloading from "../../assets/cavloading.gif"
 
 export default function Blog() {
   const [loading, setLoading] = useState(true)
@@ -12,7 +12,7 @@ export default function Blog() {
   // Fetch the list of devices
   const fetchBlogIds = async () => {
     const url =
-      "https://raw.githubusercontent.com/Evolution-X/www_gitres/refs/heads/udc/blogs/blogs.json"
+      "https://raw.githubusercontent.com/Cavvoh-OS/www_gitres/refs/heads/udc/blogs/blogs.json"
 
     try {
       const response = await fetch(url)
@@ -30,7 +30,7 @@ export default function Blog() {
     // Wait for all device data to be fetched
     const data = await Promise.all(
       blogIds.map(async (blog) => {
-        const durl = `https://raw.githubusercontent.com/Evolution-X/www_gitres/refs/heads/udc/blogs/${blog}.json`
+        const durl = `https://raw.githubusercontent.com/Cavvoh-OS/www_gitres/refs/heads/udc/blogs/${blog}.json`
         try {
           const fetchedBlog = await fetch(durl)
           const fetchedBlogData = await fetchedBlog.json()
@@ -74,13 +74,13 @@ export default function Blog() {
   return (
     <>
       {loading && (
-        <img className="mx-auto" src={evoloading} alt="loading ..." />
+        <img className="mx-auto" src={cavloading} alt="loading ..." />
       )}
       {!loading && blogsList && (
         <div className="mx-4 flex flex-col items-center justify-center gap-10 md:gap-20 lg:mx-16">
           <div className="inline-flex flex-col items-center justify-center">
             <p className="inline-flex flex-row items-baseline gap-4 text-4xl font-bold lg:text-6xl">
-              <img className="h-7 sm:h-8 lg:h-11" src={evolution} alt="" />
+              <img className="h-7 sm:h-8 lg:h-11" src={cavvoh} alt="" />
               <span className="font-[Prod-bold] text-[#afbdf3]">Blog</span>
             </p>
           </div>

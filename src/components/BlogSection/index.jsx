@@ -2,7 +2,7 @@ import React from "react"
 import share from "../../assets/share.svg"
 import { useParams } from "react-router-dom"
 import { useState, useEffect } from "react"
-import evoloading from "../../assets/evoloading.gif"
+import cavloading from "../../assets/cavloading.gif"
 
 export default function BlogSection() {
   const { blogId } = useParams()
@@ -11,7 +11,7 @@ export default function BlogSection() {
   const [isCopied, setIsCopied] = useState(false)
 
   const fetchBlog = async () => {
-    const url = `https://raw.githubusercontent.com/Evolution-X/www_gitres/refs/heads/udc/blogs/${blogId}.json`
+    const url = `https://raw.githubusercontent.com/Cavvoh-OS/www_gitres/refs/heads/udc/blogs/${blogId}.json`
     try {
       const response = await fetch(url)
       const fetchedBlog = await response.json()
@@ -61,7 +61,7 @@ export default function BlogSection() {
       {loading && (
         <img
           className="mx-auto my-auto w-4/5 lg:w-2/5"
-          src={evoloading}
+          src={cavloading}
           alt="loading ..."
         />
       )}

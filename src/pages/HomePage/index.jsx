@@ -3,8 +3,8 @@ import { Link } from "react-router-dom"
 import a14logo from "../../assets/android14.png"
 import { BackgroundGradientAnimation } from "../../components/ui/background-gradient-animation.tsx"
 import { Meteors } from "../../components/ui/meteors.tsx"
-import evoloading from "../../assets/evoloading.gif"
-import evolution from "../../assets/evolution.svg"
+import cavloading from "../../assets/cavloading.gif"
+import cavvoh from "../../assets/cavvoh.svg"
 
 const HomePage = () => {
   const [loading, setLoading] = useState(true)
@@ -12,7 +12,7 @@ const HomePage = () => {
 
   const fetchSS = async () => {
     const url =
-      "https://raw.githubusercontent.com/Evolution-X/www_gitres/refs/heads/udc/screenshots/screenshots.json"
+      "https://raw.githubusercontent.com/Cavvoh-OS/www_gitres/refs/heads/udc/screenshots/screenshots.json"
     try {
       const response = await fetch(url)
       const fetchedSS = await response.json()
@@ -42,7 +42,7 @@ const HomePage = () => {
       {loading && (
         <>
           <BackgroundGradientAnimation></BackgroundGradientAnimation>
-          <img className="z-50 m-auto" src={evoloading} alt="loading ..." />
+          <img className="z-50 m-auto" src={cavloading} alt="loading ..." />
         </>
       )}
       {!loading && (
@@ -51,7 +51,7 @@ const HomePage = () => {
           <div className="TOP z-10 flex flex-col items-center justify-center space-y-6 font-[Prod-bold]">
             <div className="inline-flex flex-col items-center text-4xl leading-tight sm:text-5xl lg:text-6xl">
               <p>
-                <span className="evoxhighlight">Evolve</span> your
+                <span className="cavoshighlight">Evolve</span> your
               </p>
               <p>Android device</p>
             </div>
@@ -60,7 +60,7 @@ const HomePage = () => {
               <p>
                 We are{" "}
                 <span>
-                  <img className="h-7" src={evolution} alt="" />
+                  <img className="h-7" src={cavvoh} alt="" />
                 </span>
               </p>
             </div>
@@ -85,10 +85,10 @@ const HomePage = () => {
               <div className="middleshadow flex flex-col gap-10 rounded-3xl bg-black px-10 py-10 sm:flex-row lg:min-h-[28rem] lg:flex-row lg:gap-20 lg:px-16 lg:py-16">
                 <div className="space-y-5 sm:w-3/4 lg:space-y-10">
                   <p className="font-[Prod-bold] text-3xl lg:text-5xl">
-                    <span className="evoxhighlight">About</span> Evolution X
+                    <span className="cavoshighlight">About</span> Cavvoh OS
                   </p>
                   <p className="text-xl lg:text-2xl">
-                    Evolution X aims to provide users with a Pixel-like feel at
+                    Cavvoh OS aims to provide users with a Pixel-like feel at
                     first glance, with additional features at their disposal.
                   </p>
                   <div>
@@ -135,7 +135,7 @@ const HomePage = () => {
                       Pixel look & feel
                     </div>
                     <div className="text-xl lg:text-2xl">
-                      Evolution X provides you with the perfect Pixel
+                      Cavvoh OS provides you with the perfect Pixel
                       experience, imitating Google Pixel devices, with
                       additional customizations.
                     </div>
@@ -149,7 +149,7 @@ const HomePage = () => {
               {screenshots.map((ss, index) => (
                 <div key={index}>
                   <img
-                    src={`https://github.com/Evolution-X/www_gitres/blob/udc/screenshots/${ss}?raw=true`}
+                    src={`https://github.com/Cavvoh-OS/www_gitres/blob/udc/screenshots/${ss}?raw=true`}
                     alt=""
                   />
                 </div>
